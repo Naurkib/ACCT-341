@@ -29,11 +29,9 @@ cursor.execute("""
     ORDER BY p.payment_id;
 """)
 
-# Fetch and print every row returned
 rows = cursor.fetchall()
 for row in rows:
     print(row)
 
-# Always close when finished
 cursor.close()
 conn.close()
